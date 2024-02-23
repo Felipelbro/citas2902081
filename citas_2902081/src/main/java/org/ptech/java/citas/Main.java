@@ -44,7 +44,7 @@ public class Main {
         cita1.setPaciente(p1);
         cita1.setFecha(LocalDateTime.of(2024, Month.MARCH, 13, 14, 20, 12 ));
 
-        System.out.println( cita1.getId() + " " + cita1.getEstado() + " " + );
+        System.out.println( cita1.getId() + " " + cita1.getEstado() + " " + cita1.getConsultorio() + cita1.getMedico() + " " + cita1.getPaciente() + " " + cita1.getFecha());
 
     }
 
