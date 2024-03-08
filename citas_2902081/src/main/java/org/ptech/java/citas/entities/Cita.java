@@ -6,29 +6,18 @@ import org.ptech.java.citas.entities.enums.EstadoCita;
 
 public class Cita {
 
-        private int id;
-        private LocalDateTime fecha;
-        private Medico medico;
-        private Paciente paciente;
-        private Consultorio consultorio;
-        private EstadoCita estado;
+        int id;
+        LocalDateTime fecha;
+        Consultorio consultorio;
+        Paciente paciente;
         
-        //sin parametros
-        public Cita() {
-        }
-        
-        //parametros
-        public Cita(int id, LocalDateTime fecha, Medico medico, Paciente paciente, Consultorio consultorio,
-                EstadoCita estado) {
+        public Cita(int id, LocalDateTime fecha, Consultorio consultorio, Paciente paciente ) {
             this.id = id;
             this.fecha = fecha;
-            this.medico = medico;
-            this.paciente = paciente;
             this.consultorio = consultorio;
-            this.estado = estado;
+            this.paciente = paciente;
         }
 
-        //getters and setters
         public int getId() {
             return id;
         }
@@ -45,12 +34,12 @@ public class Cita {
             this.fecha = fecha;
         }
 
-        public Medico getMedico() {
-            return medico;
+        public Consultorio getConsultorio() {
+            return consultorio;
         }
 
-        public void setMedico(Medico medico) {
-            this.medico = medico;
+        public void setConsultorio(Consultorio consultorio) {
+            this.consultorio = consultorio;
         }
 
         public Paciente getPaciente() {
@@ -61,24 +50,5 @@ public class Cita {
             this.paciente = paciente;
         }
 
-        public Consultorio getConsultorio() {
-            return consultorio;
-        }
-
-        public void setConsultorio(Consultorio consultorio) {
-            this.consultorio = consultorio;
-        }
-
-        public EstadoCita getEstado() {
-            return estado;
-        }
-
-        public void setEstado(EstadoCita estado) {
-            this.estado = estado;
-        }
-
         
-        
-
-
 }

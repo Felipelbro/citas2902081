@@ -13,6 +13,14 @@ public class Medico extends Usuario {
     
     private Long registroMedico;
     private Especialidad especialidad;
+    
+    @Override
+    public String toString() {
+        return "Medico Registro Medico:" + registroMedico + ", Especialidad:" + especialidad + " " + "Nombres:" + super.nombres + "Apellidos: " + super.apellidos
+        ;
+    }
+
+
 
 
     public Medico(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroDocumento, Long registroMedico, Especialidad especialidad) {

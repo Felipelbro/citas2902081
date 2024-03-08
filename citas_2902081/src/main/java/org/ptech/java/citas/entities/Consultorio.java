@@ -6,6 +6,12 @@ public class Consultorio {
         private String direccion;
         private int numero;
         
+        
+        @Override
+        public String toString() {
+            return "Consultorio ID: " + id + ", Direccion: " + direccion + ", Numero:" + numero + " ";
+        }
+
         //sin parametros
         public Consultorio() {
         }

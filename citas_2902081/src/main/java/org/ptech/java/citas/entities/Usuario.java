@@ -6,7 +6,7 @@ import org.ptech.java.citas.entities.enums.TipoDocumento;
 ///SuperClase
 ///Clase maestra
 
-public abstract class Usuario {
+public class Usuario {
 //Atributos a heredarse
 //deben ser protected
     protected int id;
@@ -14,6 +14,14 @@ public abstract class Usuario {
     protected String apellidos;
     protected TipoDocumento tipoDocumento;
     protected Long numeroDocumento;
+
+    //Sobreescribir el metodo toString
+
+    public String toString(){
+        return "nombre: " + this.nombres;
+
+
+    }
     
     public Usuario(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroDocumento) {
         this.id = id;
@@ -62,6 +70,12 @@ public abstract class Usuario {
     public void setNumeroDocumento(Long numeroDocumento) {
         this.numeroDocumento = numeroDocumento;
     }
+
+
+
+
+
+
 
 
 }
