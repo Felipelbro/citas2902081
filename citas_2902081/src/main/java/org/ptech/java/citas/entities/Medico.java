@@ -19,10 +19,6 @@ public class Medico extends Usuario {
         return "Medico Registro Medico:" + registroMedico + ", Especialidad:" + especialidad + " " + "Nombres:" + super.nombres + "Apellidos: " + super.apellidos
         ;
     }
-
-
-
-
     public Medico(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroDocumento, Long registroMedico, Especialidad especialidad) {
         //Si quieres instansear un medico
         //Tamnièn debes instanciar el usuario

@@ -28,7 +28,6 @@ System.out.println(n.toString());
 
 Consultorio c = new Consultorio(012, "Calle 129 A98 7", 303030);
 System.out.println(c.toString());
-
         Enfermero e = new Enfermero(1012, "Juan", "Gutierrez", TipoDocumento.CC , 101012L);
         System.out.println(e.toString());
     }

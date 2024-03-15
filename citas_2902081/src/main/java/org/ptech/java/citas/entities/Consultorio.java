@@ -11,23 +11,19 @@ public class Consultorio {
         public String toString() {
             return "Consultorio ID: " + id + ", Direccion: " + direccion + ", Numero:" + numero + " ";
         }
-
         //sin parametros
         public Consultorio() {
         }
-
         //parametros
           public Consultorio(int id, String direccion, int numero) {
             this.id = id;
             this.direccion = direccion;
             this.numero = numero;
         }
-
         //getters and setters 
         public int getId() {
             return id;
         }
-
         public void setId(int id) {
             this.id = id;
         }
